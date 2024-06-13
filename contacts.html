@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>MY PERSONAL WEBSITE</title>
+  <link rel="stylesheet"  href="mynewlay.css">
+  <style>
+   body{
+background-color: #FEC8D8;	
+ }
+  .header-nav {
+    background-color: #D291BC;
+    padding: 10px 0;
+	
+}
+
+.header-nav nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav nav ul li {
+    margin: 0 15px;
+}
+
+.header-nav nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e0a300;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9800;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+  </style>
+ 
+	</head>
+<body>
+   <header class="header-nav">
+        <div class="container">
+           <nav>
+		   <ul>
+		    <li><a href="home1.html">Home</a></li>
+			 <li><a href="offers1.html">Offers</a></li>
+              <li><a href="abouts1.html">About Us</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+               
+			</nav>
+        </div>
+		 
+    </header>
+	<main>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to place an order, please fill out the form below or reach out to us directly at <a href="mailto:info@delightfulcakes.com">info@delightfulcakes.com</a>. We’d love to hear from you!</p>
+        
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          
+            <a href="submit.html" class="btn">Submit</a>
+        </form>
+    </main>
+    
+	</body>
+	</html>
